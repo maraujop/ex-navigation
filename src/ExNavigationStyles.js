@@ -16,6 +16,7 @@ const configureTimingTransition = (transitionProps, previousTransitionProps) => 
   timing: Animated.timing,
   easing: Easing.inOut(Easing.linear),
   duration: 150,
+  useNativeDriver: true,
 });
 
 const configureSpringTransition = (transitionProps, previousTransitionProps) => {
@@ -36,6 +37,7 @@ const configureSpringTransition = (transitionProps, previousTransitionProps) => 
     speed,
     restSpeedThreshold,
     restDisplacementThreshold,
+    useNativeDriver: true,
   };
 };
 
