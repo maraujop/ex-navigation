@@ -403,6 +403,7 @@ class ExNavigationStack extends PureComponent<any, Props, State> {
     if (!this._useAnimation) {
       return {
         duration: 0,
+        useNativeDriver: true,
       };
     }
 
