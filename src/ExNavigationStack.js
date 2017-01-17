@@ -422,6 +422,7 @@ class ExNavigationStack extends PureComponent<any, Props, State> {
     if (typeof configureTransition === 'function') {
       return configureTransition(transitionProps, prevTransitionProps);
     }
+    return configureTransition
   };
 
   _registerNavigatorContext() {
